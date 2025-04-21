@@ -18,6 +18,6 @@ class CategoriaUnitTest extends TestCase
         $categoria = $service->crear($data);
         $this->assertInstanceOf(Categoria::class, $categoria);
         $this->assertEquals('Whisky', $categoria->Nombre);
-        $this->assertDatabaseHas('Categoria', ['Nombre' => 'Whisky']);
+        $this->assertDatabaseHas('categoria', ['Nombre' => 'Whisky']);
     }
 }

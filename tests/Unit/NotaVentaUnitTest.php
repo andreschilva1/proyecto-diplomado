@@ -18,6 +18,8 @@ class NotaVentaUnitTest extends TestCase
             ['id' => 102, 'cantidad' => 1],
         ];
 
+        Producto::whereIn('id', [101, 102])->delete();
+
         $producto1 = Producto::factory()->create(['id' => 101, 'Stock' => 10]);
         $producto2 = Producto::factory()->create(['id' => 102, 'Stock' => 5]);
 

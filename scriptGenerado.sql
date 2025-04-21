@@ -27,10 +27,6 @@ DROP TABLE IF EXISTS `Producto` CASCADE
 DROP TABLE IF EXISTS `Usuario` CASCADE
 ;
 
-ALTER TABLE `users` 
- ADD rol TEXT NULL
-;
-
 /* Create Tables */
 
 CREATE TABLE `Categoria`
@@ -92,9 +88,9 @@ CREATE TABLE `Producto`
 /* Create Foreign Key Constraints */
 
 ALTER TABLE `Detalleventa` 
- ADD CONSTRAINT `FK_DetalleVenta_Producto`
-	FOREIGN KEY (`idProducto`) REFERENCES `Producto` (`id`) ON DELETE No Action ON UPDATE No Action
-;
+ADD CONSTRAINT `FK_DetalleVenta_Producto`
+FOREIGN KEY (`idProducto`) REFERENCES `Producto` (`id`) 
+ON DELETE CASCADE ON UPDATE CASCADE;
 
 ALTER TABLE `Detalleventa` 
  ADD CONSTRAINT `FK_DetalleVenta_NotaVenta`
@@ -123,3 +119,19 @@ ALTER TABLE `Producto`
 
 SET FOREIGN_KEY_CHECKS=1 
 ;
+
+INSERT INTO categoria (Nombre) VALUES
+	 ('Ron'),
+	 ('Singani'),
+	 ('Vino'),
+	 ('Whisky');
+
+INSERT INTO producto (Nombre,Precio,Stock,Url,idCategoria) VALUES
+	 ('Havana Club - 7 Años - Ron  - 700cc',126.0,28,'../assets/ron.avif',1),
+	 ('Havana Club - Reserva - Ron - Cuba - 1000cc',95.0,45,'../assets/ron2.avif',1),
+	 ('Casa Real - Etiqueta Roja 750cc',50.0,60,'../assets/singani.avif',2),
+	 ('Casa Real - Etiqueta Negra 750cc',75.0,70,'../assets/singani2.avif',2),
+	 ('Campos de Solana - Trivarietal 750cc',100.0,30,'../assets/vino.webp',3),
+	 ('Errazuriz - Max Reserva 750cc',162.0,35,'../assets/vino2.avif',3),
+	 ('Johnnie Walker - White Walker  - 750cc',310.0,50,'../assets/whisky.webp',4),	 
+	 ('Chivas Regal - 12 Años - 1000cc',299.0,70,'../assets/whisky2.avif',4);

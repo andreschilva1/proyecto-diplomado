@@ -58,10 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         cartTotal.value = total.toFixed(2);
     }
-
-
-
-    // Agregar productos al carrito cuando se hace clic en el botón "Agregar al Carrito"
+    
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function () {
             const productData = JSON.parse(button.getAttribute("data-producto"));
@@ -77,11 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (quantity > 0 && quantity <= productStock) {
                 const existingItem = cartItems.find(item => item.id === productId);
                 if (existingItem) {
-
                     if (existingItem.cantidad + quantity <= productStock) {
                         existingItem.cantidad += quantity;
-                    } else {
-                        // Muestra un mensaje o toma otra acción, ya que excedería el stock disponible
+                    } else {                        
                         alert("No puedes agregar más de la cantidad disponible en stock");
                     }
                 } else {
@@ -93,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         cantidad: quantity,
                     });
                 }
-
                 updateCart();
             }
         });
@@ -104,6 +98,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("cartListField").value = JSON.stringify(cartItems);
     });
 
-
+    //funcion para verificar que haya productos en el carrito antes del envio al controlador
+    const form = document.getElementById("form-venta");
+    form.addEventListener("submit", function (event) {
+        if (cartItems.length === 0) {
+            event.preventDefault(); // Evita el envío del formulario
+            alert("No hay productos en el carrito.");
+        }
+    });
 });
 
