@@ -1,0 +1,94 @@
+/* Reset de estilos básicos */
+* {
+
+    font-family: 'Lato', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del navbar */
+.navbar {
+    background-color: #000000;
+    /* Fondo del navbar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Sombreado */
+    color: #fff;
+    /* Color del texto */
+    display: flex;
+    align-items: center;
+    /* Centrar verticalmente el logotipo y la lista de navegación */
+    justify-content: space-between;
+    /* Espacio entre el logotipo y la lista de navegación */
+    padding: 10px;
+}
+
+.contenedor {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+.logo img {
+    max-width: 160px;
+    /* Establece el ancho máximo del logotipo */
+    max-height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    /* Color del texto enlaces */
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links li a:hover {
+    color: #FF5733; /* Cambia de color al pasar el mouse */
+}

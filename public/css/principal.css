@@ -1,0 +1,28 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    
+    position: relative;
+    overflow: hidden;
+    max-width: 70%; /* Ajusta el ancho del carrusel */
+    margin: 5px auto;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Ajusta el ancho según la cantidad de imágenes */
+}
+
+.slide {
+    width: 33.333%; /* Ajusta el ancho según la cantidad de imágenes */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

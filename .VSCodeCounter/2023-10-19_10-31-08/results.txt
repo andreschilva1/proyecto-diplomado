@@ -1,0 +1,122 @@
+Date : 2023-10-19 10:31:08
+Directory : c:\xampp\htdocs\licor-house
+Total : 62 files,  9399 codes, 1085 comments, 477 blanks, all 10961 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          3 |      8,158 |          0 |          3 |      8,161 |
+| PHP        |         51 |      1,146 |      1,058 |        439 |      2,643 |
+| Markdown   |          1 |         45 |          0 |         22 |         67 |
+| XML        |          1 |         29 |          2 |          1 |         32 |
+| JavaScript |          4 |         20 |         23 |         11 |         54 |
+| CSS        |          2 |          1 |          2 |          1 |          4 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                         |         62 |      9,399 |      1,085 |        477 |     10,961 |
+| . (Files)                                                                                                 |          6 |      8,242 |          2 |         28 |      8,272 |
+| app                                                                                                       |         19 |        285 |        154 |         96 |        535 |
+| app\Console                                                                                               |          1 |         15 |          7 |          6 |         28 |
+| app\Exceptions                                                                                            |          1 |         17 |          9 |          5 |         31 |
+| app\Http                                                                                                  |         11 |        150 |         78 |         50 |        278 |
+| app\Http (Files)                                                                                          |          1 |         41 |         21 |          7 |         69 |
+| app\Http\Controllers                                                                                      |          1 |          9 |          0 |          4 |         13 |
+| app\Http\Middleware                                                                                       |          9 |        100 |         57 |         39 |        196 |
+| app\Models                                                                                                |          1 |         23 |         16 |          7 |         46 |
+| app\Providers                                                                                             |          5 |         80 |         44 |         28 |        152 |
+| bootstrap                                                                                                 |          1 |         17 |         30 |          9 |         56 |
+| config                                                                                                    |         15 |        528 |        750 |        238 |      1,516 |
+| database                                                                                                  |          6 |        121 |         44 |         26 |        191 |
+| database\factories                                                                                        |          1 |         23 |         11 |          5 |         39 |
+| database\migrations                                                                                       |          4 |         89 |         24 |         16 |        129 |
+| database\seeders                                                                                          |          1 |          9 |          9 |          5 |         23 |
+| public                                                                                                    |          1 |         14 |         30 |         12 |         56 |
+| resources                                                                                                 |          4 |        122 |         23 |         32 |        177 |
+| resources\css                                                                                             |          1 |          0 |          0 |          1 |          1 |
+| resources\js                                                                                              |          2 |          4 |         23 |          8 |         35 |
+| resources\views                                                                                           |          1 |        118 |          0 |         23 |        141 |
+| routes                                                                                                    |          4 |         22 |         40 |         16 |         78 |
+| tests                                                                                                     |          4 |         41 |         10 |         19 |         70 |
+| tests (Files)                                                                                             |          2 |         20 |          3 |         10 |         33 |
+| tests\Feature                                                                                             |          1 |         11 |          4 |          5 |         20 |
+| tests\Unit                                                                                                |          1 |         10 |          3 |          4 |         17 |
+| vendor                                                                                                    |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie                                                                                             |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie\ignition                                                                                    |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie\ignition\resources                                                                          |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie\ignition\resources\compiled                                                                 |          2 |          7 |          2 |          1 |         10 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                  | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\xampp\htdocs\licor-house\README.md                                                                     | Markdown   |         45 |          0 |         22 |         67 |
+| c:\xampp\htdocs\licor-house\app\Console\Kernel.php                                                        | PHP        |         15 |          7 |          6 |         28 |
+| c:\xampp\htdocs\licor-house\app\Exceptions\Handler.php                                                    | PHP        |         17 |          9 |          5 |         31 |
+| c:\xampp\htdocs\licor-house\app\Http\Controllers\Controller.php                                           | PHP        |          9 |          0 |          4 |         13 |
+| c:\xampp\htdocs\licor-house\app\Http\Kernel.php                                                           | PHP        |         41 |         21 |          7 |         69 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\Authenticate.php                                          | PHP        |         11 |          3 |          4 |         18 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\EncryptCookies.php                                        | PHP        |          8 |          6 |          4 |         18 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\PreventRequestsDuringMaintenance.php                      | PHP        |          8 |          6 |          4 |         18 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\RedirectIfAuthenticated.php                               | PHP        |         20 |          5 |          6 |         31 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\TrimStrings.php                                           | PHP        |         11 |          5 |          4 |         20 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\TrustHosts.php                                            | PHP        |         12 |          5 |          4 |         21 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\TrustProxies.php                                          | PHP        |         14 |         10 |          5 |         29 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\ValidateSignature.php                                     | PHP        |          8 |         11 |          4 |         23 |
+| c:\xampp\htdocs\licor-house\app\Http\Middleware\VerifyCsrfToken.php                                       | PHP        |          8 |          6 |          4 |         18 |
+| c:\xampp\htdocs\licor-house\app\Models\User.php                                                           | PHP        |         23 |         16 |          7 |         46 |
+| c:\xampp\htdocs\licor-house\app\Providers\AppServiceProvider.php                                          | PHP        |         12 |          8 |          5 |         25 |
+| c:\xampp\htdocs\licor-house\app\Providers\AuthServiceProvider.php                                         | PHP        |         11 |         11 |          5 |         27 |
+| c:\xampp\htdocs\licor-house\app\Providers\BroadcastServiceProvider.php                                    | PHP        |         12 |          3 |          5 |         20 |
+| c:\xampp\htdocs\licor-house\app\Providers\EventServiceProvider.php                                        | PHP        |         21 |         12 |          6 |         39 |
+| c:\xampp\htdocs\licor-house\app\Providers\RouteServiceProvider.php                                        | PHP        |         24 |         10 |          7 |         41 |
+| c:\xampp\htdocs\licor-house\bootstrap\app.php                                                             | PHP        |         17 |         30 |          9 |         56 |
+| c:\xampp\htdocs\licor-house\composer.json                                                                 | JSON       |         66 |          0 |          1 |         67 |
+| c:\xampp\htdocs\licor-house\composer.lock                                                                 | JSON       |      8,079 |          0 |          1 |      8,080 |
+| c:\xampp\htdocs\licor-house\config\app.php                                                                | PHP        |         27 |        131 |         31 |        189 |
+| c:\xampp\htdocs\licor-house\config\auth.php                                                               | PHP        |         28 |         74 |         14 |        116 |
+| c:\xampp\htdocs\licor-house\config\broadcasting.php                                                       | PHP        |         36 |         23 |         13 |         72 |
+| c:\xampp\htdocs\licor-house\config\cache.php                                                              | PHP        |         59 |         34 |         19 |        112 |
+| c:\xampp\htdocs\licor-house\config\cors.php                                                               | PHP        |          3 |         29 |          3 |         35 |
+| c:\xampp\htdocs\licor-house\config\database.php                                                           | PHP        |         83 |         47 |         22 |        152 |
+| c:\xampp\htdocs\licor-house\config\filesystems.php                                                        | PHP        |         32 |         32 |         13 |         77 |
+| c:\xampp\htdocs\licor-house\config\hashing.php                                                            | PHP        |         12 |         32 |          9 |         53 |
+| c:\xampp\htdocs\licor-house\config\logging.php                                                            | PHP        |         79 |         34 |         19 |        132 |
+| c:\xampp\htdocs\licor-house\config\mail.php                                                               | PHP        |         54 |         53 |         19 |        126 |
+| c:\xampp\htdocs\licor-house\config\queue.php                                                              | PHP        |         51 |         42 |         17 |        110 |
+| c:\xampp\htdocs\licor-house\config\sanctum.php                                                            | PHP        |         15 |         41 |         12 |         68 |
+| c:\xampp\htdocs\licor-house\config\services.php                                                           | PHP        |         17 |         11 |          7 |         35 |
+| c:\xampp\htdocs\licor-house\config\session.php                                                            | PHP        |         22 |        147 |         33 |        202 |
+| c:\xampp\htdocs\licor-house\config\view.php                                                               | PHP        |         10 |         20 |          7 |         37 |
+| c:\xampp\htdocs\licor-house\database\factories\UserFactory.php                                            | PHP        |         23 |         11 |          5 |         39 |
+| c:\xampp\htdocs\licor-house\database\migrations\2014_10_12_000000_create_users_table.php                  | PHP        |         23 |          6 |          4 |         33 |
+| c:\xampp\htdocs\licor-house\database\migrations\2014_10_12_100000_create_password_reset_tokens_table.php  | PHP        |         19 |          6 |          4 |         29 |
+| c:\xampp\htdocs\licor-house\database\migrations\2019_08_19_000000_create_failed_jobs_table.php            | PHP        |         23 |          6 |          4 |         33 |
+| c:\xampp\htdocs\licor-house\database\migrations\2019_12_14_000001_create_personal_access_tokens_table.php | PHP        |         24 |          6 |          4 |         34 |
+| c:\xampp\htdocs\licor-house\database\seeders\DatabaseSeeder.php                                           | PHP        |          9 |          9 |          5 |         23 |
+| c:\xampp\htdocs\licor-house\package.json                                                                  | JSON       |         13 |          0 |          1 |         14 |
+| c:\xampp\htdocs\licor-house\phpunit.xml                                                                   | XML        |         29 |          2 |          1 |         32 |
+| c:\xampp\htdocs\licor-house\public\index.php                                                              | PHP        |         14 |         30 |         12 |         56 |
+| c:\xampp\htdocs\licor-house\resources\css\app.css                                                         | CSS        |          0 |          0 |          1 |          1 |
+| c:\xampp\htdocs\licor-house\resources\js\app.js                                                           | JavaScript |          1 |          0 |          1 |          2 |
+| c:\xampp\htdocs\licor-house\resources\js\bootstrap.js                                                     | JavaScript |          3 |         23 |          7 |         33 |
+| c:\xampp\htdocs\licor-house\resources\views\welcome.blade.php                                             | PHP        |        118 |          0 |         23 |        141 |
+| c:\xampp\htdocs\licor-house\routes\api.php                                                                | PHP        |          6 |         10 |          4 |         20 |
+| c:\xampp\htdocs\licor-house\routes\channels.php                                                           | PHP        |          5 |         10 |          4 |         19 |
+| c:\xampp\htdocs\licor-house\routes\console.php                                                            | PHP        |          6 |         10 |          4 |         20 |
+| c:\xampp\htdocs\licor-house\routes\web.php                                                                | PHP        |          5 |         10 |          4 |         19 |
+| c:\xampp\htdocs\licor-house\tests\CreatesApplication.php                                                  | PHP        |         13 |          3 |          6 |         22 |
+| c:\xampp\htdocs\licor-house\tests\Feature\ExampleTest.php                                                 | PHP        |         11 |          4 |          5 |         20 |
+| c:\xampp\htdocs\licor-house\tests\TestCase.php                                                            | PHP        |          7 |          0 |          4 |         11 |
+| c:\xampp\htdocs\licor-house\tests\Unit\ExampleTest.php                                                    | PHP        |         10 |          3 |          4 |         17 |
+| c:\xampp\htdocs\licor-house\vendor\spatie\ignition\resources\compiled\ignition.css                        | CSS        |          1 |          2 |          0 |          3 |
+| c:\xampp\htdocs\licor-house\vendor\spatie\ignition\resources\compiled\ignition.js                         | JavaScript |          6 |          0 |          1 |          7 |
+| c:\xampp\htdocs\licor-house\vite.config.js                                                                | JavaScript |         10 |          0 |          2 |         12 |
+| Total                                                                                                     |            |      9,399 |      1,085 |        477 |     10,961 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

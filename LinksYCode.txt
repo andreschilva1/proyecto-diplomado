@@ -1,0 +1,37 @@
+https://chat.openai.com/share/e4b21590-f546-4fc4-acee-b9c48ed574b0
+
+logo: https://licorhouse.com/cdn/shop/files/3_Logo_Front_a14bbf09-db24-4dfe-afb7-7be242fe57d4_180x.jpg?v=1613573449
+img1:https://licorhouse.com/cdn/shop/files/Pack_Havana_Cuban_Mode_-_1800x1100_px_1_1296x.png?v=1694880145
+img2:https://licorhouse.com/cdn/shop/files/40_two_pack_jager_1296x.png?v=1680617104
+img3:https://licorhouse.com/cdn/shop/files/DELICOR_ALWAYS-ON_BANNER-WEB_1800X1100_8ce1b4be-f07b-46b8-b015-985dd31e2444_1296x.png?v=1679089150
+img4:https://licorhouse.com/cdn/shop/files/Cata_Verical_Esther_Ortiz_-_Licor_House_1800x1100px_2_1296x.jpg?v=1672246640
+img5:https://licorhouse.com/cdn/shop/files/107_ROYAL_SALUTE_1296x.jpg?v=1647432908
+
+composer require league/flysystem-aws-s3-v3 "^3.0" --with-all-dependencies
+'visibility' => 'public'
+
+@if( Auth::user()->rol === 'admin' )
+                    <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                @endif
+                @auth
+                    <li>
+                        <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                    </li>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                @endauth
+
+
+$path = $request->file('url')->store("user{$user->id}", 's3');
+            $user->url = Storage::disk('s3')->url($path);
+
+
+
+
+
+
+
