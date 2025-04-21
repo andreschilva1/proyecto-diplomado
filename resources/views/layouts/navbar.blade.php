@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
     <link rel="stylesheet" type="text/css" href="..\css\navbar.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     @yield('css')
 </head>
 
