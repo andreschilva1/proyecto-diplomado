@@ -1,0 +1,56 @@
+-- Desactiva temporalmente comprobación de llaves foráneas
+PRAGMA foreign_keys = OFF;
+
+-- Borra tablas en el orden inverso para no romper FKs
+DROP TABLE IF EXISTS categoria;
+DROP TABLE IF EXISTS Detalleventa;
+DROP TABLE IF EXISTS Inventario;
+DROP TABLE IF EXISTS Notaventa;
+DROP TABLE IF EXISTS Producto;
+
+
+-- Crea las tablas con sintaxis SQLite
+CREATE TABLE categoria (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  Nombre TEXT
+);
+
+CREATE TABLE Producto (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  Nombre TEXT,
+  Precio REAL,
+  Stock INTEGER,
+  Url TEXT,
+  idCategoria INTEGER,
+  FOREIGN KEY (idCategoria) REFERENCES Categoria(id)
+);
+
+CREATE TABLE Notaventa (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  Fecha TEXT,        -- puedes usar DATE o TEXT
+  Montototal REAL,
+  idUsuario INTEGER NOT NULL,
+  FOREIGN KEY (idUsuario) REFERENCES users(id)
+);
+
+CREATE TABLE Detalleventa (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  Cantidad INTEGER,
+  idNotaventa INTEGER,
+  idProducto INTEGER,
+  FOREIGN KEY (idNotaventa) REFERENCES Notaventa(id),
+  FOREIGN KEY (idProducto)  REFERENCES Producto(id)
+);
+
+CREATE TABLE Inventario (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  Accion TEXT,
+  Cantidad INTEGER,
+  idUsuario INTEGER NOT NULL,
+  idProducto INTEGER NOT NULL,
+  FOREIGN KEY (idUsuario)  REFERENCES users(id),
+  FOREIGN KEY (idProducto) REFERENCES Producto(id)
+);
+
+-- Vuelve a activar la comprobación de llaves foráneas
+PRAGMA foreign_keys = ON;

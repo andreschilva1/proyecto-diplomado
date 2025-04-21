@@ -1,0 +1,19 @@
+services:
+  app:
+    container_name: app-laravel
+    restart: unless-stopped
+    image: app-laravel:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    env_file: .env
+
+    volumes:
+      - laravel-storage-vol:/var/www/html/storage
+      - ./.env:/var/www/html/.env
+
+volumes:
+  laravel-storage-vol:
+    driver: local
