@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfpXYMNfEkbxUOE4ztmAmOjiNfyXZdmQYReNQW6KAaBYreoLT4LEnvO587iied20xSCs&usqp=CAU" alt="Botella Logo"> <!-- Reemplaza 'ruta/a/tu/logo.png' con la ubicación de tu logotipo de botella -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfpXYMNfEkbxUOE4ztmAmOjiNfyXZdmQYReNQW6KAaBYreoLT4LEnvO587iied20xSCs&usqp=CAU" alt="Botella Logo">
         </x-slot>
 
         <x-validation-errors class="mb-4" />

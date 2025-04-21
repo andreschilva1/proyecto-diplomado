@@ -1,0 +1,12 @@
+//Features
+php artisan test --filter=test_user_can_login_with_correct_credentials
+php artisan test --filter=test_user_cannot_login_with_incorrect_credentials
+php artisan test --filter=test_usuario_puede_crear_categoria_desde_formulario
+php artisan test --filter=test_no_puede_guardar_categoria_vacia
+php artisan test --filter=test_usuario_puede_crear_producto_desde_formulario
+php artisan test --filter=test_no_puede_guardar_producto_vacia
+
+//UNIT
+php artisan test --filter=test_crear_una_categoria
+php artisan test --filter=test_crear_nota_venta
+php artisan test --test_crear_un_producto

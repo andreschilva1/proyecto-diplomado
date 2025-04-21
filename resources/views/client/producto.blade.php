@@ -29,10 +29,9 @@
 
     <div class="cart">
         <h1>Carrito de Compras</h1>
-        <form method="POST" action="{{ route('notaventa.store') }}">
+        <form method="POST" action="{{ route('notaventa.store') }}" id="form-venta">
             @csrf
-            <ul class="cart-list" id="cartList" >
-                <!-- Los productos seleccionados se agregarán aquí dinámicamente -->
+            <ul class="cart-list" id="cartList" >                
             </ul>
             <input type="hidden" id="cartListField" name="cartList">
             <div class="cart-total">
@@ -43,7 +42,6 @@
             </div>
         </form>
     </div>
-
     <script src="..\js\producto.js"></script>
 @endsection
 
